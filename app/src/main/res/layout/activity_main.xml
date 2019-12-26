@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Température ambiante: 25°C"
+        android:textColor="@color/colorYellow"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/horloge"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/temperature"
+        android:layout_marginTop="100dp"/>
+
+    <View
+        android:id="@+id/horloge_numerique"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/horloge"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/horloge_numerique"
+        android:layout_marginTop="49dp"
+        android:text="Voir météo" />
+
+</RelativeLayout>
